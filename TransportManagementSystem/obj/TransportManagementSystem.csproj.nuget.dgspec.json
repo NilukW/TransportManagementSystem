@@ -1,0 +1,291 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem\\TransportManagementSystem.csproj": {}
+  },
+  "projects": {
+    "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Data\\TransportManagementSystem.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Data\\TransportManagementSystem.Data.csproj",
+        "projectName": "TransportManagementSystem.Data",
+        "projectPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Data\\TransportManagementSystem.Data.csproj",
+        "packagesPath": "C:\\Users\\Niluk\\.nuget\\packages\\",
+        "outputPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Niluk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Model\\TransportManagementSystem.Model.csproj": {
+                "projectPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Model\\TransportManagementSystem.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Model\\TransportManagementSystem.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Model\\TransportManagementSystem.Model.csproj",
+        "projectName": "TransportManagementSystem.Model",
+        "projectPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Model\\TransportManagementSystem.Model.csproj",
+        "packagesPath": "C:\\Users\\Niluk\\.nuget\\packages\\",
+        "outputPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Niluk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Services\\TransportManagementSystem.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Services\\TransportManagementSystem.Services.csproj",
+        "projectName": "TransportManagementSystem.Services",
+        "projectPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Services\\TransportManagementSystem.Services.csproj",
+        "packagesPath": "C:\\Users\\Niluk\\.nuget\\packages\\",
+        "outputPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Niluk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Data\\TransportManagementSystem.Data.csproj": {
+                "projectPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Data\\TransportManagementSystem.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem\\TransportManagementSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem\\TransportManagementSystem.csproj",
+        "projectName": "TransportManagementSystem",
+        "projectPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem\\TransportManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\Niluk\\.nuget\\packages\\",
+        "outputPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Niluk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Services\\TransportManagementSystem.Services.csproj": {
+                "projectPath": "F:\\MSC\\ESAD\\Assignment\\TransportManagementSystem\\TransportManagementSystem.Services\\TransportManagementSystem.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.14, )"
+            },
+            "Unity": {
+              "target": "Package",
+              "version": "[5.11.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

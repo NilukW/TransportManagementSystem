@@ -28,6 +28,7 @@ namespace TransportManagementSystem
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen();
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<ICustomerRepository, CustomerRepository>();
@@ -44,6 +45,15 @@ namespace TransportManagementSystem
                 app.UseDeveloperExceptionPage();
             }
 
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.)
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Transport Management System V1");
+            });
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -54,6 +64,8 @@ namespace TransportManagementSystem
             {
                 endpoints.MapControllers();
             });
+
+
         }
     }
 }

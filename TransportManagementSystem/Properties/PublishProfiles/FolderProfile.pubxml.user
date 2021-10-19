@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
-    <History>True|2021-10-19T18:18:59.4908589Z;True|2021-10-19T22:21:55.6734099+05:30;</History>
+    <History>True|2021-10-19T19:38:05.2320263Z;True|2021-10-19T23:48:59.4908589+05:30;True|2021-10-19T22:21:55.6734099+05:30;</History>
   </PropertyGroup>
 </Project>

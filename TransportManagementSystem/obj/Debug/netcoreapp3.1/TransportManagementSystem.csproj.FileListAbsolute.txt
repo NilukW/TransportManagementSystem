@@ -41,3 +41,8 @@ F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\D
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Debug\netcoreapp3.1\TransportManagementSystem.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Debug\netcoreapp3.1\TransportManagementSystem.pdb
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Debug\netcoreapp3.1\TransportManagementSystem.genruntimeconfig.cache
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Debug\netcoreapp3.1\TransportManagementSystem.MvcApplicationPartsAssemblyInfo.cs

@@ -1,0 +1,12 @@
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\bin\Release\netcoreapp3.1\TransportManagementSystem.Data.deps.json
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\bin\Release\netcoreapp3.1\TransportManagementSystem.Data.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\bin\Release\netcoreapp3.1\TransportManagementSystem.Data.pdb
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\bin\Release\netcoreapp3.1\TransportManagementSystem.Model.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\bin\Release\netcoreapp3.1\TransportManagementSystem.Model.pdb
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\obj\Release\netcoreapp3.1\TransportManagementSystem.Data.csproj.AssemblyReference.cache
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\obj\Release\netcoreapp3.1\TransportManagementSystem.Data.AssemblyInfoInputs.cache
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\obj\Release\netcoreapp3.1\TransportManagementSystem.Data.AssemblyInfo.cs
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\obj\Release\netcoreapp3.1\TransportManagementSystem.Data.csproj.CoreCompileInputs.cache
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\obj\Release\netcoreapp3.1\TransportManagementSystem.Data.csproj.CopyComplete
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\obj\Release\netcoreapp3.1\TransportManagementSystem.Data.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Data\obj\Release\netcoreapp3.1\TransportManagementSystem.Data.pdb

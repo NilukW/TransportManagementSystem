@@ -22,7 +22,7 @@ namespace TransportManagementSystem.Data
         public async Task<int> AddAsync(Customer entity)
         {
             var sql = "Insert into Customers (Name,Description,Barcode,Rate,AddedOn) VALUES (@Name,@Description,@Barcode,@Rate,@AddedOn)";
-            using (var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
+            using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
                 var result = await connection.ExecuteAsync(sql, entity);
@@ -32,7 +32,7 @@ namespace TransportManagementSystem.Data
         public async Task<int> DeleteAsync(int id)
         {
             var sql = "DELETE FROM Customers WHERE Id = @Id";
-            using (var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
+            using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
                 var result = await connection.ExecuteAsync(sql, new { Id = id });
@@ -52,7 +52,7 @@ namespace TransportManagementSystem.Data
         public async Task<Customer> GetByIdAsync(int id)
         {
             var sql = "SELECT * FROM Customers WHERE Id = @Id";
-            using (var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
+            using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
                 var result = await connection.QuerySingleOrDefaultAsync<Customer>(sql, new { Id = id });
@@ -62,7 +62,7 @@ namespace TransportManagementSystem.Data
         public async Task<int> UpdateAsync(Customer entity)
         {
             var sql = "UPDATE Customers SET Name = @Name, Description = @Description, Barcode = @Barcode, Rate = @Rate, ModifiedOn = @ModifiedOn  WHERE Id = @Id";
-            using (var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
+            using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
                 var result = await connection.ExecuteAsync(sql, entity);

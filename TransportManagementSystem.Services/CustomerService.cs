@@ -9,9 +9,9 @@ namespace TransportManagementSystem.Services
     public class CustomerService : ICustomerService
     {
         private readonly ICustomerRepository _customerRepository;
-        public CustomerService(ICustomerRepository CustomerRepository)
+        public CustomerService(ICustomerRepository customerRepository)
         {
-            _customerRepository = CustomerRepository;
+            _customerRepository = customerRepository;
         }
 
         public async Task<List<Customer>> GetAllAsync()

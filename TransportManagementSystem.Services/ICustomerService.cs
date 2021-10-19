@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using TransportManagementSystem.Model;
 
 namespace TransportManagementSystem.Services
 {
     public interface ICustomerService
     {
-        System.Threading.Tasks.Task<List<Customer>> GetAllAsync();
+        Task<List<Customer>> GetAllAsync();
     }
 }

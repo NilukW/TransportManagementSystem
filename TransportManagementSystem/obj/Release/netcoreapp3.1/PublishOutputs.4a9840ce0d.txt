@@ -10,9 +10,13 @@ F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\R
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\System.Web.Http.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Configuration.Abstractions.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Primitives.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.OpenApi.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.Bson.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Npgsql.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\System.Data.SqlClient.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Unity.Abstractions.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\PubTmp\Out\Unity.Container.dll

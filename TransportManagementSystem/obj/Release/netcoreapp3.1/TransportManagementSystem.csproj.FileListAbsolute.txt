@@ -11,9 +11,13 @@ F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\R
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\System.Web.Http.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Microsoft.OpenApi.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Npgsql.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Unity.Abstractions.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\bin\Release\netcoreapp3.1\Unity.Container.dll
@@ -32,6 +36,7 @@ F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\R
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\TransportManagementSystem.AssemblyInfoInputs.cache
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\TransportManagementSystem.AssemblyInfo.cs
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\TransportManagementSystem.csproj.CoreCompileInputs.cache
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\TransportManagementSystem.MvcApplicationPartsAssemblyInfo.cs
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\TransportManagementSystem.MvcApplicationPartsAssemblyInfo.cache
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\staticwebassets\TransportManagementSystem.StaticWebAssets.Manifest.cache
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem\obj\Release\netcoreapp3.1\staticwebassets\TransportManagementSystem.StaticWebAssets.xml

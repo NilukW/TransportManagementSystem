@@ -36,7 +36,10 @@ namespace TransportManagementSystem
             services.AddTransient<IAuthenticationRepository, AuthenticationRepository>();
             services.AddTransient<IAuthenticationService, AuthenticationService>();
             services.AddTransient<ITokenRepository, TokenRepository>();
+            services.AddTransient<ITokenPaymentRepository, TokenPaymentRepository>();
             services.AddTransient<ITokenService, TokenService>();
+            services.AddTransient<IBusRepository, BusRepository>();
+            services.AddTransient<IBusService, BusService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -21,7 +21,7 @@ namespace TransportManagementSystem.Data
         }
         public async Task<Guid> AddAsync(Token entity)
         {
-            var sql = "Insert into public.token (id,tokenId,userId,tokenType,createtime,expiredAt) VALUES (@id,@tokenId,@userId,@tokenType,@createtime,@expiredAt) RETURNING tokenId";
+            var sql = "Insert into public.token (tokenId,userId,tokenType,createtime,expiredAt) VALUES (@tokenId,@userId,@tokenType,@createtime,@expiredAt) RETURNING tokenId";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();

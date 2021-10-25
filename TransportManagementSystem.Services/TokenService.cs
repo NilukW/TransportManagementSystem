@@ -9,9 +9,11 @@ namespace TransportManagementSystem.Services
     public class TokenService : ITokenService
     {
         private readonly ITokenRepository _tokenRepository;
-        public TokenService(ITokenRepository tokenRepository)
+        private readonly ITokenPaymentRepository _tokenPaymentRepository;
+        public TokenService(ITokenRepository tokenRepository, ITokenPaymentRepository tokenPaymentRepository)
         {
             _tokenRepository = tokenRepository;
+            _tokenPaymentRepository = tokenPaymentRepository;
         }
 
         public async Task<List<Token>> GetAllTokens()
@@ -28,7 +30,11 @@ namespace TransportManagementSystem.Services
         {
             token.CreateTime = DateTime.Now;
             token.ExpiredAt = DateTime.Now.AddHours(21);
-            return await _tokenRepository.AddAsync(token);
+            Guid tokenString = await _tokenRepository.AddAsync(token);
+            var tokenOutput = await _tokenRepository.GetByIdAsync(tokenString);
+            token.TokenPayment.TokenId = tokenOutput.Id;
+            await _tokenPaymentRepository.AddAsync(token.TokenPayment);
+            return tokenString;
         }
     }
 }

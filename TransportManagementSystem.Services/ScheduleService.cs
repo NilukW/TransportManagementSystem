@@ -28,7 +28,7 @@ namespace TransportManagementSystem.Services
 
         public async Task<Schedule> GetSchedule(int id)
         {
-            return await _scheduleRepository.GetByIdAsync(id)
+            return await _scheduleRepository.GetByIdAsync(id);
         }
     }
 }

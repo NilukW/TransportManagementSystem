@@ -11,9 +11,9 @@ namespace TransportManagementSystem.Services
         private readonly IDriverRepository _driverRepository;
         private readonly IUserRepository _userRepository;
 
-        public DriverService()
-        {
-        }
+        //public DriverService()
+        //{
+        //}
 
         public DriverService(IUserRepository userRepository,IDriverRepository driverRepository)
         {

@@ -1,26 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TransportManagementSystem.Data;
 using TransportManagementSystem.Model;
 
 namespace TransportManagementSystem.Services
 {
-    public IUserService getUser(UserTypes type)
+    public class UserProducer
     {
-        IUserService userService = null;
-        switch (type)
+        private readonly IDriverRepository _driverRepository;
+        private readonly IUserRepository _userRepository;
+        public IUserService GetUser(UserTypes type)
         {
-            case UserTypes.Driver:
-                userService = new DriverService();
-                break;
-            case UserTypes.Passenger:
-                userService = new PassengerService();
-                break;
-            case UserTypes.inspector:
-                userService = new InspectorService();
-                break;
-        }
 
-        return userService;
+            IUserService userService = null;
+            switch (type)
+            {
+                case UserTypes.Driver:
+                    userService = new DriverService(_userRepository,_driverRepository);
+                    break;
+                case UserTypes.Passenger:
+                    userService = new PassengerService();
+                    break;
+                case UserTypes.Inspector:
+                    userService = new InspectorService();
+                    break;
+            }
+
+            return userService;
+        }
     }
 }

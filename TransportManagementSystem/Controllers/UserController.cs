@@ -20,11 +20,11 @@ namespace TransportManagementSystem.Controllers
             _userProducer = userProducer;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<Driver>> ProvisionDriver([FromBody] Driver driver)
-        {
-            IDriverService driverService = (IDriverService) _userProducer.getUser(Roles.driver);
-            return await driverService.CreateDriverProfile(driver);
-        }
+        //[HttpPost]
+        //public async Task<ActionResult<Driver>> ProvisionDriver([FromBody] Driver driver)
+        //{
+        //    //IDriverService driverService = (IDriverService) _userProducer.getUser(Roles.driver);
+        //    //return await driverService.CreateDriverProfile(driver);
+        //}
     }
 }

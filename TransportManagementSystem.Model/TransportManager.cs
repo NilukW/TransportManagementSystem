@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TransportManagementSystem.Model
 {
-    public class TransportManager : IUser
+    public class TransportManager : User
     {
         public int UserId { get; set; }
         public string Username { get; set; }

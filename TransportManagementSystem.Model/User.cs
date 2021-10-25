@@ -11,6 +11,7 @@
     public enum UserTypes { 
         Passenger = 1,
         Driver = 2,
-        TransportManager =3
+        TransportManager =3,
+        Inspector = 4
     }
 }

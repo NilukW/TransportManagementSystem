@@ -25,6 +25,9 @@ namespace TransportManagementSystem.Services
                 case UserTypes.Inspector:
                     userService = new InspectorService();
                     break;
+                case UserTypes.TransportManager:
+                    //userService = new TransportManager();
+                    break;
             }
 
             return userService;

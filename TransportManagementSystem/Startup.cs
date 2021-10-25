@@ -31,15 +31,36 @@ namespace TransportManagementSystem
             services.AddSwaggerGen();
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
             services.AddTransient<ICustomerRepository, CustomerRepository>();
             services.AddTransient<ICustomerService, CustomerService>();
+            
             services.AddTransient<IAuthenticationRepository, AuthenticationRepository>();
             services.AddTransient<IAuthenticationService, AuthenticationService>();
+
             services.AddTransient<ITokenRepository, TokenRepository>();
             services.AddTransient<ITokenPaymentRepository, TokenPaymentRepository>();
             services.AddTransient<ITokenService, TokenService>();
+
             services.AddTransient<IBusRepository, BusRepository>();
             services.AddTransient<IBusService, BusService>();
+
+            services.AddSingleton<UserProducer>();
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IDriverRepository, DriverRepository>();
+            services.AddTransient<IDriverService, DriverService>();
+
+            services.AddTransient<IPassengerService, PassengerService>();
+            services.AddTransient<IInspectorService, InspectorService>();
+
+            services.AddTransient<IReservationRepository, ReservationRepository>();
+            services.AddTransient<IReservationService, ReservationService>();
+
+            services.AddTransient<IRouteRepository, RouteRepository>();
+            services.AddTransient<IRouteService, RouteService>();
+
+            services.AddTransient<IScheduleRepository, ScheduleRepository>();
+            services.AddTransient<IScheduleService, ScheduleService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

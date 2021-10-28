@@ -10,9 +10,14 @@ namespace TransportManagementSystem.Services
     {
         private readonly IDriverRepository _driverRepository;
         private readonly IUserRepository _userRepository;
+
+        public UserProducer(IDriverRepository driverRepository, IUserRepository userRepository) {
+            _driverRepository = driverRepository;
+            _userRepository = userRepository;
+        }
+
         public IUserService GetUser(UserTypes type)
         {
-
             IUserService userService = null;
             switch (type)
             {

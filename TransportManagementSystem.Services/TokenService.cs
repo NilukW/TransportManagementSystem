@@ -10,10 +10,12 @@ namespace TransportManagementSystem.Services
     {
         private readonly ITokenRepository _tokenRepository;
         private readonly ITokenPaymentRepository _tokenPaymentRepository;
-        public TokenService(ITokenRepository tokenRepository, ITokenPaymentRepository tokenPaymentRepository)
+        private readonly ITicketRepository _ticketRepository;
+        public TokenService(ITokenRepository tokenRepository, ITokenPaymentRepository tokenPaymentRepository, ITicketRepository ticketRepository)
         {
             _tokenRepository = tokenRepository;
             _tokenPaymentRepository = tokenPaymentRepository;
+            _ticketRepository = ticketRepository;
         }
 
         public async Task<List<Token>> GetAllTokens()
@@ -35,6 +37,20 @@ namespace TransportManagementSystem.Services
             token.TokenPayment.TokenId = tokenOutput.Id;
             await _tokenPaymentRepository.AddAsync(token.TokenPayment);
             return tokenString;
+        }
+
+        public async Task<int> ManageTicket(Ticket ticket)
+        {
+            ticket.CheckedTime = DateTime.Now;
+            ticket.Id = await _ticketRepository.GetTicketAsync(ticket);
+            if (ticket.Id > 0)
+            {
+                await _ticketRepository.UpdateAsync(ticket);
+            }
+            else {
+                await _ticketRepository.AddAsync(ticket);
+            }
+            return ticket.Id;
         }
     }
 }

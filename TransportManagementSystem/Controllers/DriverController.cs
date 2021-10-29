@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TransportManagementSystem.Model;
 using TransportManagementSystem.Services;
+using static TransportManagementSystem.Model.Types.Enums;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

@@ -10,5 +10,6 @@ namespace TransportManagementSystem.Services
         Task<List<Token>> GetAllTokens();
         Task<Token> GetToken(Guid tokenId);
         Task<Guid> CreateToken(Token token);
+        Task<int> ManageTicket(Ticket token);
     }
 }

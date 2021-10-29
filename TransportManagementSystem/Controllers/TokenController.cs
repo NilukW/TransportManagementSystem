@@ -37,5 +37,11 @@ namespace TransportManagementSystem.Controllers
         {
             return await _tokenService.CreateToken(token);
         }
+
+        [HttpPost]
+        public async Task<ActionResult<int>> CreateTicket([FromBody] Ticket ticket)
+        {
+            return await _tokenService.ManageTicket(ticket);
+        }
     }
 }

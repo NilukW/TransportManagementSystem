@@ -1,4 +1,6 @@
-﻿namespace TransportManagementSystem.Model
+﻿using static TransportManagementSystem.Model.Types.Enums;
+
+namespace TransportManagementSystem.Model
 {
     public class User
     {
@@ -8,10 +10,5 @@
         public UserTypes UserType { get; set; }
     }
 
-    public enum UserTypes { 
-        Passenger = 1,
-        Driver = 2,
-        TransportManager =3,
-        Inspector = 4
-    }
+
 }

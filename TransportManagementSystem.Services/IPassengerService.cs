@@ -8,6 +8,8 @@ namespace TransportManagementSystem.Services
 {
     public interface IPassengerService : IUserService
     {
-        Task<Passenger> AddPassenger(Passenger passenger);
+        Task<int> AddPassenger(Passenger passenger);
+        Task<List<Passenger>> GetAllPassengers();
+        Task<Passenger> GetPassenger(int id);
     }
 }

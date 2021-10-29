@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TransportManagementSystem.Model;
 using TransportManagementSystem.Services;
+using static TransportManagementSystem.Model.Types.Enums;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,43 +15,34 @@ namespace TransportManagementSystem.Controllers
     [ApiController]
     public class PassengerController : ControllerBase
     {
+        private readonly UserProducer _userProducer;
         private readonly IPassengerService _passengerService;
 
-        public PassengerController(IPassengerService passengerService)
+        public PassengerController(UserProducer userProducer)
         {
-            _passengerService = passengerService;
+            _userProducer = userProducer;
+            _passengerService = (IPassengerService)_userProducer.GetUser(UserTypes.Driver);
         }
 
         // GET: api/<PassengerController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<List<Passenger>>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return await _passengerService.GetAllPassengers();
         }
 
         // GET api/<PassengerController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<Passenger>> Get(int id)
         {
-            return "value";
+            return await _passengerService.GetPassenger(id);
         }
 
         // POST api/<PassengerController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<int>> Post([FromBody] Passenger passenger)
         {
-        }
-
-        // PUT api/<PassengerController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<PassengerController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return await _passengerService.AddPassenger(passenger);
         }
     }
 }

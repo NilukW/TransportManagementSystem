@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TransportManagementSystem.Model.Types;
 
 namespace TransportManagementSystem.Model
 {
@@ -15,7 +16,8 @@ namespace TransportManagementSystem.Model
         public TokenPayments TokenPayment { get; set; }
     }
 
-    public class TokenPayments {
+    public class TokenPayments
+    {
         public int Id { get; set; }
         public int TokenId { get; set; }
         public string CardNumber { get; set; }
@@ -25,9 +27,12 @@ namespace TransportManagementSystem.Model
         public string ExpiryDate { get; set; }
     }
 
-    public enum TokenTypes
+    public class Ticket
     {
-        general = 1,
-        week = 2
+        public int Id { get; set; }
+        public int BusId { get; set; }
+        public string TokenId { get; set; }
+        public string BusStopId { get; set; }
+        public DateTime CheckedTime { get; set; }
     }
 }

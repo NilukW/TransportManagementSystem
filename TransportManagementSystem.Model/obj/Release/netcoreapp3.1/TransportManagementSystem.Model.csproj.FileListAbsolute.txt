@@ -6,3 +6,4 @@ F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\obj\Release\netcoreapp3.1\TransportManagementSystem.Model.csproj.CoreCompileInputs.cache
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\obj\Release\netcoreapp3.1\TransportManagementSystem.Model.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\obj\Release\netcoreapp3.1\TransportManagementSystem.Model.pdb
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\obj\Release\netcoreapp3.1\TransportManagementSystem.Model.csproj.AssemblyReference.cache

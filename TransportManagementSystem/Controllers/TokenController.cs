@@ -39,6 +39,7 @@ namespace TransportManagementSystem.Controllers
         }
 
         [HttpPost]
+        [Route("/ticket")]
         public async Task<ActionResult<int>> CreateTicket([FromBody] Ticket ticket)
         {
             return await _tokenService.ManageTicket(ticket);

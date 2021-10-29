@@ -45,7 +45,7 @@ namespace TransportManagementSystem
             services.AddTransient<IBusRepository, BusRepository>();
             services.AddTransient<IBusService, BusService>();
 
-            services.AddSingleton<UserProducer>();
+            services.AddTransient<UserProducer>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IDriverRepository, DriverRepository>();
             services.AddTransient<IDriverService, DriverService>();

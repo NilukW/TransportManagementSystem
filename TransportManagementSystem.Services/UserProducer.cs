@@ -15,20 +15,10 @@ namespace TransportManagementSystem.Services
         private readonly IUserRepository _userRepository;
 
 
-        public UserProducer(IDriverRepository driverRepository, IUserRepository userRepository) {
+        public UserProducer(IDriverRepository driverRepository, ITransportManagerRepository transportManagerRepository, IPassengerRepository passengerRepository, IUserRepository userRepository) {
             _driverRepository = driverRepository;
-            _userRepository = userRepository;
-        }
-
-        public UserProducer(ITransportManagerRepository transportManagerRepository, IUserRepository userRepository)
-        {
-            _transportManagerRepository = transportManagerRepository;
-            _userRepository = userRepository;
-        }
-
-        public UserProducer(IPassengerRepository passengerRepository, IUserRepository userRepository)
-        {
             _passengerRepository = passengerRepository;
+            _transportManagerRepository = transportManagerRepository;
             _userRepository = userRepository;
         }
 

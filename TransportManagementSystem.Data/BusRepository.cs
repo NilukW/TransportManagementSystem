@@ -22,7 +22,7 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> AddAsync(Bus entity)
         {
-            var sql = "Insert into public.bus (buscode,numberplate,companyname,manufacturer,mnufactureryear,numberofseats,qrcode) VALUES (@buscode,@numberplate,@companyname,@manufacturer,@numberofseats,@numberofseats,@qrcode)";
+            var sql = "Insert into public.bus (buscode,numberplate,companyname,manufacturer,mnufactureryear,numberofseats,qrcode) VALUES (@buscode,@numberplate,@companyname,@manufacturer,@mnufactureryear,@numberofseats,@qrcode)";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();

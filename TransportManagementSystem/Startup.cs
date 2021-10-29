@@ -50,7 +50,6 @@ namespace TransportManagementSystem
             services.AddTransient<IDriverRepository, DriverRepository>();
             services.AddTransient<IDriverService, DriverService>();
 
-            services.AddTransient<IPassengerService, PassengerService>();
             services.AddTransient<IInspectorService, InspectorService>();
 
             services.AddTransient<IReservationRepository, ReservationRepository>();
@@ -61,6 +60,14 @@ namespace TransportManagementSystem
 
             services.AddTransient<IScheduleRepository, ScheduleRepository>();
             services.AddTransient<IScheduleService, ScheduleService>();
+
+            services.AddTransient<IPassengerRepository, PassengerRepository>();
+            services.AddTransient<IPassengerService, PassengerService>();
+
+            services.AddTransient<ITransportManagerRepository, TransportManagerRepository>();
+            services.AddTransient<ITransportManagerService, TransportManagerService>();
+
+            services.AddTransient<ITicketRepository, TicketRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

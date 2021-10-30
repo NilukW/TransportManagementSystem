@@ -8,8 +8,8 @@ namespace TransportManagementSystem.Model
     {
         public int Id { get; set; }
         public int BusId { get; set; }
-        public string TokenId { get; set; }
-        public string BusStopId { get; set; }
-        public DateTime CheckedTime { get; set; }
+        public int TokenId { get; set; }
+        public int BusStopId { get; set; }
+        public DateTime? CheckedTime { get; set; }
     }
 }

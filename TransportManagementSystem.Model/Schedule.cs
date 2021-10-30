@@ -9,8 +9,8 @@ namespace TransportManagementSystem.Model
         public int Id { get; set; }
         public int RouteId { get; set; }
         public int DriverId { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
         public bool Status { get; set; }
     }
 }

@@ -14,3 +14,8 @@
 /TransportManagementSystem.Services/bin/Release
 /TransportManagementSystem.Services/obj/Release
 /TransportManagementSystem.Services/obj/Debug
+/.vs/TransportManagementSystem/v16
+/TransportManagementSystem.Data/obj/project.nuget.cache
+/TransportManagementSystem.Model/obj/project.nuget.cache
+/TransportManagementSystem.Services/obj/project.nuget.cache
+/TransportManagementSystem/obj/project.nuget.cache

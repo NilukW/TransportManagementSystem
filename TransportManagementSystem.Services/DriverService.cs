@@ -19,7 +19,8 @@ namespace TransportManagementSystem.Services
         public async Task<int> CreateDriver(Driver driver)
         {
             driver.UserId = await _userRepository.AddAsync(driver as User);
-            return await _driverRepository.AddAsync(driver);
+            await _driverRepository.AddAsync(driver);
+            return driver.UserId;
         }
 
         public Task<int> CreateUser(User user)

@@ -55,7 +55,7 @@ namespace TransportManagementSystem.Data
 
         public async Task<Driver> GetByIdAsync(int id)
         {
-            var sql = "SELECT * FROM public.driver WHERE Id = @Id";
+            var sql = "SELECT * FROM public.driver WHERE userid = @Id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();

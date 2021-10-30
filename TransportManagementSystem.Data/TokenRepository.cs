@@ -66,9 +66,15 @@ namespace TransportManagementSystem.Data
             }
         }
 
-        public Task<Token> GetByIdAsync(int id)
+        public async Task<Token> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM public.token WHERE userid = @Id";
+            using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
+            {
+                connection.Open();
+                var result = await connection.QuerySingleOrDefaultAsync<Token>(sql, new { Id = id });
+                return result;
+            }
         }
 
         public async Task<int> UpdateAsync(Token entity)

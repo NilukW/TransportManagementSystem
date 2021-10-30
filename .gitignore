@@ -2,3 +2,15 @@
 /TransportManagementSystem/bin/Debug
 /TransportManagementSystem/obj/Release
 /TransportManagementSystem/obj/Debug
+/TransportManagementSystem.Data/bin/Debug
+/TransportManagementSystem.Data/bin/Release
+/TransportManagementSystem.Model/bin/Release
+/TransportManagementSystem.Model/bin/Debug
+/TransportManagementSystem.Model/obj/Release
+/TransportManagementSystem.Model/obj/Debug
+/TransportManagementSystem.Data/obj/Release
+/TransportManagementSystem.Data/obj/Debug
+/TransportManagementSystem.Services/bin/Debug
+/TransportManagementSystem.Services/bin/Release
+/TransportManagementSystem.Services/obj/Release
+/TransportManagementSystem.Services/obj/Debug

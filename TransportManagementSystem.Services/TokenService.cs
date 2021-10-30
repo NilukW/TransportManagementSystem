@@ -28,6 +28,11 @@ namespace TransportManagementSystem.Services
             return await _tokenRepository.GetByIdAsync(tokenId);
         }
 
+        public async Task<Token> GetToken(int userId)
+        {
+            return await _tokenRepository.GetByIdAsync(userId);
+        }
+
         public async Task<Guid> CreateToken(Token token)
         {
             token.CreateTime = DateTime.Now;
@@ -48,7 +53,7 @@ namespace TransportManagementSystem.Services
                 await _ticketRepository.UpdateAsync(ticket);
             }
             else {
-                await _ticketRepository.AddAsync(ticket);
+                ticket.Id = await _ticketRepository.AddAsync(ticket);
             }
             return ticket.Id;
         }

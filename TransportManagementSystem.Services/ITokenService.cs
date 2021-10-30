@@ -9,6 +9,7 @@ namespace TransportManagementSystem.Services
     {
         Task<List<Token>> GetAllTokens();
         Task<Token> GetToken(Guid tokenId);
+        Task<Token> GetToken(int userId);
         Task<Guid> CreateToken(Token token);
         Task<int> ManageTicket(Ticket token);
     }

@@ -32,6 +32,13 @@ namespace TransportManagementSystem.Controllers
             return await _tokenService.GetToken(tokenId);
         }
 
+        [HttpGet]
+        [Route("/api/GetTokenByUser/{userId}")]
+        public async Task<ActionResult<Token>> GetTokenByUser(int userId)
+        {
+            return await _tokenService.GetToken(userId);
+        }
+
         [HttpPost]
         public async Task<ActionResult<Guid>> CreateToken([FromBody] Token token)
         {

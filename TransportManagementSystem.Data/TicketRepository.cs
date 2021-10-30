@@ -43,7 +43,7 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> GetTicketAsync(Ticket entity)
         {
-            var sql = "SELECT * FROM public.ticket WHERE busid = @busid and tokenid = @tokenid";
+            var sql = "SELECT id FROM public.ticket WHERE busid = @busid and tokenid = @tokenid";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();

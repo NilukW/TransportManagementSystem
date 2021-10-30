@@ -55,7 +55,7 @@ namespace TransportManagementSystem.Data
 
         public async Task<Passenger> GetByIdAsync(int id)
         {
-            var sql = "SELECT * FROM public.passenger WHERE Id = @Id";
+            var sql = "SELECT * FROM public.passenger WHERE userid = @Id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();

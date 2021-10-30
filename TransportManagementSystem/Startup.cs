@@ -27,10 +27,7 @@ namespace TransportManagementSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-            });
+
 
             services.AddControllers();
             services.AddSwaggerGen();
@@ -76,6 +73,16 @@ namespace TransportManagementSystem
 
             services.AddTransient<IInspectorRepository, InspectorRepository>();
             services.AddTransient<InspectorService, InspectorService>();
+
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+
+            //services.AddCors(c =>
+            //{
+            //    c.AddPolicy("AllowOrigin", options => options.WithOrigins("http://127.0.0.1:5500"));
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -106,7 +113,8 @@ namespace TransportManagementSystem
                 endpoints.MapControllers();
             });
 
-
+            app.UseCors(options => options.AllowAnyOrigin());
+            //app.UseCors(options => options.WithOrigins("http://127.0.0.1:5500"));
         }
     }
 }

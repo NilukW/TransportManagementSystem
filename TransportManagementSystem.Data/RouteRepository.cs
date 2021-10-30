@@ -22,7 +22,7 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> AddAsync(Route entity)
         {
-            var sql = "Insert into public.Route (routeno,routename,isactive) VALUES (@routeno,@routename,'1') RETURNING id";
+            var sql = "Insert into public.Route (routeno,routename,isactive) VALUES (@routeno,@routename,'1') RETURNING routeid";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();

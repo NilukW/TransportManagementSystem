@@ -19,7 +19,7 @@ namespace TransportManagementSystem.Services
         public async Task<int> CreateRoute([FromBody] Route route)
         {
             var routeId = await _routeRepository.AddAsync(route);
-            foreach (var busStop in route.ListOfStops)
+            foreach (var busStop in route.ListOfRoutes)
             {
                 busStop.RouteId = routeId;
                 await _routeRepository.AddBusStop(busStop);

@@ -22,7 +22,7 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> AddAsync(Route entity)
         {
-            var sql = "Insert into public.Route (isactive) VALUES ('1') RETURNING id";
+            var sql = "Insert into public.Route (routeno,routename,isactive) VALUES (@routeno,@routename,'1') RETURNING id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
@@ -33,7 +33,7 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> AddBusStop(BusStops entity)
         {
-            var sql = "Insert into public.Route (name,latitude,longitude,routeid) VALUES (@name,@latitude,@longitude,@routeid) RETURNING id";
+            var sql = "Insert into public.busstops (name,latitude,longitude,routeid,amount) VALUES (@name,@latitude,@longitude,@routeid,@amount) RETURNING id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();

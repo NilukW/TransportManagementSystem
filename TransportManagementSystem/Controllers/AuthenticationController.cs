@@ -22,7 +22,15 @@ namespace TransportManagementSystem.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> Auth([FromBody] AuthenticateData authenticateData)
         {
-            return await _authenticationService.ValidateUser(authenticateData.Username, authenticateData.Password);
+            var user = await _authenticationService.ValidateUser(authenticateData.Username, authenticateData.Password);
+            if (user != null)
+            {
+                return user;
+            }
+            else
+            {
+                return  StatusCode(StatusCodes.Status401Unauthorized,"Authentication failed! Try again.");
+            }
         }
     }
 }

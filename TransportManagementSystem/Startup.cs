@@ -68,6 +68,9 @@ namespace TransportManagementSystem
             services.AddTransient<ITransportManagerService, TransportManagerService>();
 
             services.AddTransient<ITicketRepository, TicketRepository>();
+
+            services.AddTransient<IInspectorRepository, InspectorRepository>();
+            services.AddTransient<InspectorService, InspectorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

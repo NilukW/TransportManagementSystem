@@ -22,11 +22,11 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> AddAsync(Schedule entity)
         {
-            var sql = "Insert into public.schedule (routeid,starttime,endtime,driverid,status) VALUES (@routeid,@starttime,@endtime,@driverid,'1')";
+            var sql = "Insert into public.schedule (routeid,starttime,endtime,driverid,status) VALUES (@routeid,@starttime,@endtime,@driverid,'1') RETURNING id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
-                var result = await connection.ExecuteAsync(sql, entity);
+                var result = await connection.ExecuteScalarAsync<int>(sql, entity);
                 return result;
             }
         }

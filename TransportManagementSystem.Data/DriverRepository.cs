@@ -22,11 +22,11 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> AddAsync(Driver entity)
         {
-            var sql = "Insert into public.driver (fullname,dateofbirth,address,userid,licenseno,contactno) VALUES (@fullname,@dateofbirth,@address,@userid,@licenseno,@contactno)";
+            var sql = "Insert into public.driver (fullname,dateofbirth,address,userid,licenseno,contactno) VALUES (@fullname,@dateofbirth,@address,@userid,@licenseno,@contactno) RETURNING id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
-                var result = await connection.ExecuteAsync(sql, entity);
+                var result = await connection.ExecuteScalarAsync<int>(sql, entity);
                 return result;
             }
         }

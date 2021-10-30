@@ -22,18 +22,18 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> AddAsync(Route entity)
         {
-            var sql = "Insert into public.Route (isactive) VALUES ('1')";
+            var sql = "Insert into public.Route (isactive) VALUES ('1') RETURNING id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
-                var result = await connection.ExecuteAsync(sql, entity);
+                var result = await connection.ExecuteScalarAsync<int>(sql, entity);
                 return result;
             }
         }
 
         public async Task<int> AddBusStop(BusStops entity)
         {
-            var sql = "Insert into public.Route (name,latitude,longitude,routeid) VALUES (@name,@latitude,@longitude,@routeid)";
+            var sql = "Insert into public.Route (name,latitude,longitude,routeid) VALUES (@name,@latitude,@longitude,@routeid) RETURNING id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();

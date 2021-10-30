@@ -1,6 +1,7 @@
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\bin\Debug\netcoreapp3.1\TransportManagementSystem.Model.deps.json
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\bin\Debug\netcoreapp3.1\TransportManagementSystem.Model.dll
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\bin\Debug\netcoreapp3.1\TransportManagementSystem.Model.pdb
+F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\obj\Debug\netcoreapp3.1\TransportManagementSystem.Model.csproj.AssemblyReference.cache
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\obj\Debug\netcoreapp3.1\TransportManagementSystem.Model.AssemblyInfoInputs.cache
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\obj\Debug\netcoreapp3.1\TransportManagementSystem.Model.AssemblyInfo.cs
 F:\MSC\ESAD\Assignment\TransportManagementSystem\TransportManagementSystem.Model\obj\Debug\netcoreapp3.1\TransportManagementSystem.Model.csproj.CoreCompileInputs.cache

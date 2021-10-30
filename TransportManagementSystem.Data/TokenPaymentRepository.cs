@@ -18,11 +18,11 @@ namespace TransportManagementSystem.Data
         }
         public async Task<int> AddAsync(TokenPayments entity)
         {
-            var sql = "Insert into public.tokenpayments (tokenid,cardnumber,nameoncard,amount,cvv,expirydate) VALUES (@tokenid,@cardnumber,@nameoncard,@amount,@cvv,@expirydate)";
+            var sql = "Insert into public.tokenpayments (tokenid,cardnumber,nameoncard,amount,cvv,expirydate) VALUES (@tokenid,@cardnumber,@nameoncard,@amount,@cvv,@expirydate) RETURNING id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
-                var result = await connection.ExecuteAsync(sql, entity);
+                var result = await connection.ExecuteScalarAsync<int>(sql, entity);
                 return result;
             }
         }

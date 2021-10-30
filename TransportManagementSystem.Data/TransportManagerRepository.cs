@@ -26,7 +26,7 @@ namespace TransportManagementSystem.Data
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
-                var result = await connection.ExecuteAsync(sql, entity);
+                var result = await connection.ExecuteScalarAsync<int>(sql, entity);
                 return result;
             }
         }

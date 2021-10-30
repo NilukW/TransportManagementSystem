@@ -22,11 +22,11 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> AddAsync(User entity)
         {
-            var sql = "Insert into public.user (username,password,usertype) VALUES (@username,@password,@usertype)";
+            var sql = "Insert into public.user (username,password,usertype) VALUES (@username,@password,@usertype) RETURNING userid";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
-                var result = await connection.ExecuteAsync(sql, entity);
+                var result = await connection.ExecuteScalarAsync<int>(sql, entity);
                 return result;
             }
         }

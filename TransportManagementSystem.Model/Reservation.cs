@@ -9,7 +9,7 @@ namespace TransportManagementSystem.Model
         public int PassengerId { get; set; }
         public int BusRouteId { get; set; }
         public int NoOfSheet { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreateDate { get; set; }
         public string Time { get; set; }
     }
 }

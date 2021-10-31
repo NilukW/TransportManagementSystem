@@ -33,9 +33,6 @@ namespace TransportManagementSystem
             services.AddSwaggerGen();
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
-            services.AddTransient<ICustomerRepository, CustomerRepository>();
-            services.AddTransient<ICustomerService, CustomerService>();
             
             services.AddTransient<IAuthenticationRepository, AuthenticationRepository>();
             services.AddTransient<IAuthenticationService, AuthenticationService>();

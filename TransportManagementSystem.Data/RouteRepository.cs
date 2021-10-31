@@ -44,7 +44,7 @@ namespace TransportManagementSystem.Data
 
         public async Task<int> DeleteAsync(int id)
         {
-            var sql = "DELETE FROM public.Route WHERE Id = @Id";
+            var sql = "DELETE FROM public.Route WHERE routeid = @Id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
@@ -66,7 +66,7 @@ namespace TransportManagementSystem.Data
 
         public async Task<Route> GetByIdAsync(int id)
         {
-            var sql = "SELECT * FROM public.Route WHERE Id = @Id";
+            var sql = "SELECT * FROM public.Route WHERE routeid = @Id";
             using (var connection = new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();

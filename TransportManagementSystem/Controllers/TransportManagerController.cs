@@ -25,7 +25,7 @@ namespace TransportManagementSystem.Controllers
         }
         // GET: api/<TransportManagerController>
         [HttpGet]
-       public async Task<ActionResult<List<TransportManager>>> Get()
+        public async Task<ActionResult<List<TransportManager>>> Get()
         {
             return await _transportManagerService.GetAllTransportManagers();
         }
@@ -43,6 +43,6 @@ namespace TransportManagementSystem.Controllers
         {
             return await _transportManagerService.CreateTransportManager(transportManager);
         }
-    
+
     }
 }

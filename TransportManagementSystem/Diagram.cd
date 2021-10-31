@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TransportManagementSystem.Model.Bus">
-    <Position X="1" Y="0.75" Width="2" />
+    <Position X="1" Y="0.5" Width="2" />
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Model.Driver">
-    <Position X="7" Y="0.75" Width="1.5" />
+    <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Model.User">
@@ -13,11 +13,11 @@
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Model.Passenger">
-    <Position X="11.75" Y="0.5" Width="1.5" />
+    <Position X="13.5" Y="0.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Model.Reservation">
-    <Position X="4" Y="0.75" Width="2" />
+    <Position X="4" Y="0.5" Width="2" />
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Model.Route">
@@ -33,29 +33,29 @@
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Model.Token">
-    <Position X="9" Y="5" Width="1.5" />
+    <Position X="15.5" Y="0.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Model.TokenPayments">
-    <Position X="10.75" Y="5" Width="1.5" />
+    <Position X="17.25" Y="0.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Model.TransportManager">
-    <Position X="11.5" Y="2.25" Width="1.5" />
+    <Position X="11.5" Y="1.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Services.RouteService">
-    <Position X="2.5" Y="8.25" Width="1.5" />
+    <Position X="2.5" Y="8.5" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TransportManagementSystem.Services.ReservationService">
-    <Position X="4" Y="3.75" Width="2" />
+    <Position X="4" Y="3.25" Width="2" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TransportManagementSystem.Services.PassengerService">
-    <Position X="13.5" Y="1" Width="1.5" />
+    <Position X="13.5" Y="3.25" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
@@ -74,12 +74,26 @@
     <TypeIdentifier />
   </Class>
   <Class Name="TransportManagementSystem.Services.TokenService">
-    <Position X="9" Y="8" Width="1.5" />
+    <Position X="15.5" Y="3.75" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TransportManagementSystem.Services.ScheduleService">
     <Position X="5" Y="8.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TransportManagementSystem.Services.InspectorService">
+    <Position X="9.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TransportManagementSystem.Model.Inspector">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="TransportManagementSystem.Services.TransportManagerService">
+    <Position X="11.5" Y="4.75" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>

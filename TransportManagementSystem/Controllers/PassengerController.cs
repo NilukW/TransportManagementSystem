@@ -21,7 +21,7 @@ namespace TransportManagementSystem.Controllers
         public PassengerController(UserProducer userProducer)
         {
             _userProducer = userProducer;
-            _passengerService = (IPassengerService)_userProducer.GetUser(UserTypes.Driver);
+            _passengerService = (IPassengerService)_userProducer.GetUser(UserTypes.Passenger);
         }
 
         // GET: api/<PassengerController>

@@ -28,8 +28,16 @@ namespace TransportManagementSystem
         public void ConfigureServices(IServiceCollection services)
         {
 
-
             services.AddControllers();
+
+            services.AddCors(c =>
+                {
+                    c.AddPolicy("AllowAll", options => options.SetIsOriginAllowed(isOriginAllowed: _ => true)
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+                });
+
             services.AddSwaggerGen();
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
@@ -71,25 +79,11 @@ namespace TransportManagementSystem
             services.AddTransient<IInspectorRepository, InspectorRepository>();
             services.AddTransient<InspectorService, InspectorService>();
 
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-            });
-
-            //services.AddCors(c =>
-            //{
-            //    c.AddPolicy("AllowOrigin", options => options.WithOrigins("http://127.0.0.1:5500"));
-            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
@@ -98,6 +92,13 @@ namespace TransportManagementSystem
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Transport Management System V1");
             });
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 
@@ -109,9 +110,6 @@ namespace TransportManagementSystem
             {
                 endpoints.MapControllers();
             });
-
-            app.UseCors(options => options.AllowAnyOrigin());
-            //app.UseCors(options => options.WithOrigins("http://127.0.0.1:5500"));
         }
     }
 }
